@@ -7,7 +7,7 @@
 -- For example: sv_defaultserverlogging.lua, sh_simpleplugin.lua, cl_myplugin.lua
 
 -- The following example shows how to recreate normal gmod logging - This means no logs for groups
-hook.Add( "BC_onServerLog", "exampleHook", function( channelType, channelName, ... )
+hook.Add( "BC_onServerLog", "CFC_BetterChat_DefaultLogging", function( channelType, channelName, ... )
     local data = { ... }
     local sender = data[1]
     local senderName = "Console"
